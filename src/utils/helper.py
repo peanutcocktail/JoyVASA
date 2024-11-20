@@ -165,6 +165,7 @@ def load_model(ckpt_path, model_config, device, model_type):
                                n_prev_motions=model_args.n_prev_motions,
                                feature_dim=model_args.feature_dim,
                                audio_model=model_args.audio_model,
+                               device=device,
                                n_diff_steps=model_args.n_diff_steps,)
         model_data['model'].pop('denoising_net.TE.pe')
         model.load_state_dict(model_data['model'], strict=False)
