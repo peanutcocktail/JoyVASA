@@ -3,7 +3,7 @@
 accelerate==0.28.0
 audio-separator==0.17.2
 av==12.1.0
-bitsandbytes==0.43.1
+#bitsandbytes==0.43.1
 eva-decord
 diffusers==0.27.2
 einops==0.8.0
